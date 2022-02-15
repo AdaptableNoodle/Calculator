@@ -1,1 +1,152 @@
+:root {
+  --background: #f6f6f6;
+  --font: #222;
+  --border: #333;
+  --screen: #eee;
+  --calculator: #aaa;
+  --btn: #eee;
+  --btn-hover: #ddd;
+  --btn-active: #ccc;
+  --btn-red: #faa;
+  --btn-red-hover: #e99;
+  --btn-red-active: #d88;
+  --btn-blue: #aaf;
+  --btn-blue-hover: #99e;
+  --btn-blue-active: #88d;
+}
 
+html{
+  background-color: grey;
+
+}
+
+
+
+.calculator {
+  width: 200px;
+  border: 5px black solid;
+  border-radius: 5px;
+  background-color: var(--calculator);
+  margin: auto;
+}
+
+.screen {
+  padding: 10px;
+  border: 5px var(--black) solid;
+  border-radius: 0px;
+  background-color: black;
+  text-align: right;
+  word-wrap: break-word;
+  word-break: break-all;
+  color: var( --screen);
+  font-size: 25px;
+}
+
+.onscreen {
+  font: 50px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  border: 1px var(--border) solid;
+  background-color: var(--calculator);
+
+}
+
+.fila{
+  width: 200px;
+  height: 50px;
+  border: 0px var(--border) solid;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0px;
+
+}
+
+
+button{
+  height: 50px;
+  width: 50px;
+  font-size: 30px;
+  border: 0px var(--border) solid;
+
+
+}
+
+
+.gris{
+  background-color: #ADADAD;
+}
+
+.operator {
+  background-color: #FF9500;
+  color: white;
+}
+
+#equal {
+  background-color: #FF9500;
+  color: white;
+}
+
+
+.footer {
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+}
+
+
+.gris:hover {
+  background-color: var(--btn-hover);
+}
+
+.gris:active {
+  background-color: var(--btn-active);
+}
+
+
+.btn:hover {
+  background-color: var(--btn-hover);
+}
+
+.btn:active {
+  background-color: var(--btn-active);
+}
+
+
+.operator:hover {
+  background-color: var(--btn-red-hover);
+}
+
+.operator:active {
+  background-color: var(--btn-red-active);
+}
+
+#equal:hover {
+  background-color: var(--btn-red-hover);
+}
+
+#equal:active {
+  background-color: var(--btn-red-active);
+}
+
+.low:hover {
+  background-color: var(--btn-hover);
+}
+
+.low:active {
+  background-color: var(--btn-active);
+}
